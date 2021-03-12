@@ -1,0 +1,11 @@
+<div *ngIf="course">
+    <div><label class="badge">id: {{course.id}}</label></div>
+    <div>
+        <label class="label">name:</label>
+        <input [(ngModel)]="course.name" placeholder="name"/>
+    </div>
+    <br/>
+    <button routerLink='/dashboard'>
+        <span>Back</span>
+    </button>
+</div>
